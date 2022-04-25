@@ -59,6 +59,19 @@
   grid-area: footer; 
 }
 
+.fotoUno { 
+  grid-area: menu;
+}
+.fotoDos { 
+  grid-area: main; 
+}
+.fotoTres { 
+  grid-area: right; 
+}
+.footer {
+   grid-area: footer;
+}
+
 .grid-container-index {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
@@ -86,11 +99,19 @@
     'footer footer footer footer footer footer';
   padding: 1px;
   gap: 1px;
-  background-color: #b4c2cf;
 }
 
+.grid-container-pages {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'header2 header2 header2 header2 header2 header2'
+    'menu menu main main right right'
+    'footer footer footer footer footer footer';
+  padding: 1px;
+  gap: 1px;
+}
 .grid-container > div {
-  background-color: #c5fae796;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -102,6 +123,16 @@
   font-size: 30px;
 }
 
+.grid-container-pages > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+ 
+.fotoParrafo {
+  color: #0b59a2;
+  margin-top: 50px;
+}
 
 ul {
   list-style-type: none;
@@ -209,6 +240,8 @@ ul li {
   color: #f0f0f1;
 }
 
+
+
 /*MEDIAS QUERYS*/
 /*@media only screen and (max-width: 500px){
   .flexNavbar{
@@ -221,34 +254,106 @@ ul li {
     background-color: azure;
     flex-direction: column;
   }*/
-.fotoUno { grid-area: menu; }
-.fotoDos { grid-area: main; }
-.fotoTres { grid-area: right; }
-.footer { grid-area: footer; }
 
-.grid-container-pages {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'header2 header2 header2 header2 header2 header2'
-    'menu menu main main right right'
-    'footer footer footer footer footer footer';
-  padding: 1px;
-  gap: 1px;
-  background-color: #b4c2cf;
-}
-
-.grid-container-pages > div {
-  background-color:  #c5fae796;
-  text-align: center;
-  padding: 20px 0;
+/*ANIMACIONES*/
+/*INDEX*/
+.index-content1 h3{
   font-size: 30px;
+  text-shadow: 5px 5px 5px rgb(236, 224, 116);
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 2s;
+  animation-duration: alternate;
+  animation-iteration-count:infinite;
 }
 
-.fotoParrafo {
-  color: #0b59a2;
-  margin-top: 50px;
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    transform: translateX(150px);
+    color: yellow;
+  }
+
+  100%{
+    /*transform: rotate(-500deg);*/
+    transform: translate(10px, 50px);
+    color: #072063;
+  }
 }
+
+/*DEGRADES*/
+.body{
+  height: 100vh;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+/*TRANSITION*/
+/*FORMULARIO*/
+input{
+  transition: all 2s;
+}
+
+input:focus{
+  font-size: 20px;
+  color: #076327;
+}
+
+input::placeholder{
+  color: #1330d9;
+}
+
+/*NAVBAR*/
+.animaciones{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  background-color: rgb(228, 228, 68);
+  animation-name: efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+}
+
+@keyframes efecto{
+  0%{
+    width: 20px;
+  }
+
+  50%{
+    width: 50px;
+    background-color: yellowgreen;animation-duration: s
+  }
+}
+
+/*GALERIA*/
+.logo{
+  width: 400px;
+  height: 400px;
+  background-color: #87c790;
+  animation-name: galeria;
+  animation-duration: 2s;
+  position: relative;
+  animation-direction: reverse;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes galeria{
+  0%{
+    left: 0; top: 0px;
+  }
+  50%{
+    left: 300px;top: 0px;
+  }
+  100%{
+    left: 0; top: 0px;
+  }
+}
+
+
 
   
 
