@@ -275,6 +275,7 @@ ul li {
   50%{
     transform: translateX(150px);
     color: yellow;
+    
   }
 
   100%{
