@@ -13,6 +13,10 @@ h2{
   font-size: 50px;margin-bottom: 30px;
 }
 
+h5{
+  margin-bottom: 0px;
+}
+
 p{
   font-size: 18px;
   color: bisque;
@@ -22,7 +26,15 @@ p{
 
 a:hover{
   text-decoration: none;
+}
 
+a i{
+  font-size: 22px;
+  color: white;
+}
+
+.bg-light-grey{
+  background-color: rgb(207, 181, 147);
 }
 
 .topmargin-xs{
@@ -49,6 +61,10 @@ a:hover{
   background-color: aliceblue;
   color: black;
   border: 2px solid white;
+}
+
+.text-dark p{
+  color: black;
 }
 
 .navbar{
@@ -90,7 +106,7 @@ a:hover{
 
 .content-center{
   max-width: 800px;
-  margin: 180px auto 80px auto;
+  margin: 250px auto 80px auto;
   text-align: center;
 }
 
@@ -115,7 +131,74 @@ a:hover{
   margin-bottom: 0px;
 }
 
+.member-container{
+  position: relative;
+  margin: 10px 0;
+}
 
+.member-details{
+  position: absolute;
+  color: white;
+  bottom: 0px;
+  left: 20px;
+}
+
+.member-details span{
+  font-size: 14px;
+}
+
+.member-details i{
+  padding: 0 5px;
+}
+
+
+/*.carousel{
+  min-height: 240px;
+  padding: 40px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.carousel p{
+  font-size: 26px;
+  font-weight: 400;
+  color: black;
+}
+
+.rating{
+  color: rgb(225, 225, 56);
+  font-size: 26px;
+}
+
+.carousel-indicatiors li{
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  margin: 0 8px;
+}
+
+.carousel-container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.carousel-control-next, .carousel-control-prev{
+  color: rgb(28, 4, 4);
+  opacity: 1;
+  width: 5%;
+}
+
+.carousel-button{
+  background-color: black;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 20px;
+
+}*/
 
 
 /*
