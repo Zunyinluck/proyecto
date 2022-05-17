@@ -1,0 +1,269 @@
+html {
+  font-size: 62%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#c2e9e5), color-stop(#bcebe2), color-stop(#b7ecde), color-stop(#b4edd8), to(#b2eed1));
+  background-image: linear-gradient(to right top, #c2e9e5, #bcebe2, #b7ecde, #b4edd8, #b2eed1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #1d4d4d;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+nav, .servicios, .presentacion, .footer-content {
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%;
+}
+
+/*---VARIABLES---*/
+p {
+  font-size: 20px;
+  color: #6bab44;
+}
+
+h1 {
+  font-size: 30px;
+  color: #0f2c2c;
+}
+
+h2 {
+  font-size: 25px;
+  color: #0f2c2c;
+}
+
+h3 {
+  font-size: 25px;
+  color: #0f2c2c;
+  font-weight: lighter;
+}
+
+.btn, .btn-principal, .btn-secundario {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+}
+
+.btn:hover, .btn-principal:hover, .btn-secundario:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*---EXTEND----*/
+.btn-principal {
+  color: aliceblue;
+  background-color: #e49c49;
+}
+
+.btn-secundario {
+  background-color: #e49c49;
+}
+
+/*--MIXINS--*/
+.logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  border-top: 30px solid #a7e3d6;
+  width: 100%;
+}
+
+.wrapper {
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+nav ul a {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  background-color: azure;
+  color: gray;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.servicios div {
+  text-align: center;
+}
+
+.servicios .tipo-servicios {
+  background-color: #d7f4f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.servicios .tipo-servicios i {
+  font-size: 40px;
+  color: #e49c49;
+}
+
+.servicios .tipo-servicios p {
+  text-align: justify;
+}
+
+.servicios .tipo-servicios div {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+#mision {
+  width: 70%;
+  margin: auto;
+  padding-top: 70px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mision div span {
+  color: aliceblue;
+}
+
+.servicio-fila {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  min-height: 80px;
+  background-color: #e49c49;
+  margin-top: 0;
+}
+
+footer .footer-content {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+footer .footer-content .iconos i {
+  font-size: 30px;
+  color: antiquewhite;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+/*---PANTALLAS XL---*/
+@media (min-width: 1400px) {
+  nav, .servicios, .footer-content, .presentacion {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/*---PANTALLAS MEDIANAS---*/
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wra;
+        flex-wrap: wra;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+/*---PANTALLAS CHICAS---*/
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=inicio.css.map */

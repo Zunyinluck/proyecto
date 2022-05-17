@@ -1,0 +1,108 @@
+html{
+    font-size: 62%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right top, #c2e9e5, #bcebe2, #b7ecde, #b4edd8, #b2eed1);
+}
+
+ul{
+    list-style-type: none;    
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(29, 77, 77);    
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+nav, .servicios, .presentacion, .footer-content{
+    width: 80%;
+    margin: auto;    
+}
+
+.titulo-servicios, .presentacion{
+    margin-bottom: 10%;
+}
+
+
+/*---VARIABLES---*/
+
+$font-p: 20px;
+$font-h1: 30px;
+$font-h2: 25px;
+$font-h3: 25px;
+$color-titulos: rgb(15, 44, 44);
+$contenedor-color:rgb(215, 244, 241);
+
+p{
+    font-size: $font-p;
+    color: rgb(107, 171, 68);
+}
+
+h1{
+    font-size: $font-h1;
+    color:$color-titulos;
+}
+
+h2{
+    font-size: $font-h2;
+    color:$color-titulos;
+}
+
+h3{
+    font-size: $font-h3;
+    color:$color-titulos;
+    font-weight: lighter;
+}
+
+.btn{
+    border: none;
+    border-radius: 2px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: transform 100ms;
+    &:hover{
+      transform: scale(1.1);
+    } 
+}
+
+/*---EXTEND----*/
+
+.btn-principal{
+    @extend .btn;
+    color:aliceblue;
+    background-color: rgb(228, 156, 73);
+}
+
+.btn-secundario{
+    @extend .btn;
+    background-color: rgb(228, 156, 73);
+}
+
+
+/*--MIXINS--*/
+@mixin caja-flex($principal, $medio, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $medio;
+    flex-wrap: $wrap;
+}
