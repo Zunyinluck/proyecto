@@ -204,3 +204,45 @@
         grid-column-start: span1;      
     }
 }
+
+/*--contacto---*/
+@media (max-width:768px){
+    #intro, #equipo{
+        width: 90%;
+    } 
+
+    #equipo p{
+        display: none;
+    }
+
+    .servicio-fila{
+        width: 100%;
+        text-align: center;
+    }
+
+    #bg-contacto{
+        top: -110px;    
+    }
+    
+}
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+

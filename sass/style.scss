@@ -386,7 +386,7 @@ main{
     .mapa{
         background: url();
         width: 100%;
-        margin-top: 50px;
+        margin-top: 80px;
         margin-left: 20px;
     }
 }
@@ -425,6 +425,56 @@ main{
 #numeros-local p{
     margin: 0;
 }
+
+/*---ESTILOS FORMULARIOS---*/
+
+#bg-contacto{
+    position: relative;
+    top: -130px;    
+}
+
+#seccion-contacto{
+    background-color: #D1E8E4;
+    min-height: 500px;
+    position: relative;
+}
+
+#contenedor-formulario{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-cajas-div;
+    border-radius: 5px;
+    max-width: 700px;
+
+    .boton-form{
+        background: $color-body;
+        color: $color-titulos;
+    }
+
+    .boton-form:hover{
+        background: $color-hover;
+    }
+
+   
+}
+
+#titulo-formulario{
+    color: $color-titulos;
+    font-style: oblique;
+
+    div{
+        img{
+            width: 80%;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+    }
+}
+
+
 
 
 
